@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from sys import argv
-add = 0
-from s in argv[1:]:
-    add += int(s)
-print("{:d}".format(add))
+import sys
+
+if __name__ == '__main__':
+    args = sys.argv
+    args.pop(0)
+    print(sum(map(int, args)))
