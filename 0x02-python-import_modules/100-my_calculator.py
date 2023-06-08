@@ -13,13 +13,13 @@ def arg_calc(argv):
     if op == '+':
         print("{:d} {:s} {:d} = {:d}".format(a, op, b, add(a, b)))
     elif op == '-':
-        print("{:d} {:s} {:d} = {:d}".format(a, op, b, sub(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, op, b, suiib(a, b)))
     elif op == '*':
         print("{:d} {:s} {:d} = {:d}".format(a, op, b, mul(a, b)))
     elif op == '/':
         print("{:d} {:s} {:d} = {:d}".format(a, op, b, div(a, b)))
     else:
-        print("Unknown operator. Available operations: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
 
